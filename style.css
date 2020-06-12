@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.hero{
+	height : 100vh;
+	background-image: url(logo.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+.nav-bar{
+	display: flex;
+	padding: 40px 120px;
+}
+.nav-logoimg{
+	width:130px;
+}

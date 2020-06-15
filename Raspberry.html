@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Using Two Whatsapp Accounts On The Same Phone</title>
+		<title>Setting up a Raspberry Pi headless mode</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -36,8 +36,8 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>How to use two Whatsapp accounts on the same phone.</h2>
-							<p> Thinking of how to use two Whatsapp accounts on the same phone? Then what are you waiting for, read this How-To Blog to find out how.</p>
+							<h2>Setting up a Raspberry Pi headless mode</h2>
+							<p> No nessesary hardware to setup a Raspberry Pi? or not convenient to work directly on the Raspberry Pi? The read this <strong>How-To-Blog</strong> to find out how.</p>
 						</header>
 						<div class="row gtr-150">
 							<div class="col-8 col-12-medium">
@@ -46,14 +46,16 @@
 									<section id="content">
 										<a href="#" class="image fit"><img src="images/what.jpg" alt="" /></a>
 										<header class="major">
-										<h3>Dual SIM is great, but dual messaging is even better.</h3>
+										<h3>Headless setup using VNC</h3>
 									</header>
-										<p class="featured">Using two Whatsapp accounts on the same phone comes in very handy for people who don't use two seperate phones for work and for personel tasks.</p>
-										<p>Several manufacturers have natively implemented a solution to let people simultaneously use two accounts with the same messaging app. The compatibility will depend on the phone's brand, model, and software version. If your device supports it, it's by far the easiest and most convenient way to text with two different WhatsApp numbers on your phone. With this method, notifications will be handled natively, and most phones will identify the secondary account with a badge.</p>
-										<h3>Samsung</h3>
-										<p>If you have a Samsung phone with One UI, you've probably noticed your phone asked if you wanted to use a secondary WhatsApp account when installing the app. If you dismissed the prompt then, have no fear, as it's effortless to set up a second copy of the app.</p>
-										<ul>
-											<li>Go to Settings</li>
+									<h5>Introduction to VNC</h5>
+										<p class="featured">In computing, Virtual Network Computing (VNC) is a graphical desktop-sharing system that uses the Remote Frame Buffer protocol (RFB) to remotely control another computer. It transmits the keyboard and mouse events from one computer to another, relaying the graphical-screen updates back in the other direction, over a network.</p>
+										<p>After the setup you will be able to see your Raspberry Pi Desktop in a window.Read the instructions below to see <strong>how to create a Virtual Desktop</strong></p>
+										<h3>Setup</h3>
+									<p class="featured"><strong>Note</strong>- VNC is already installed on the full Raspberry Pi OS image.It can be installed via <strong>Recommended Software</strong> from the <strong>Preferences</strong> menu on other versions.</p>
+											<li>If you are not using a desktop you can install it from the command line as follows:
+												<mark>sudo apt update</mark>br>
+sudo apt install realvnc-vnc-server realvnc-vnc-viewer</mark></li>
 											<li>Navigate to Advanced features</li>
 											<li>Click on Dual Messenger</li>
 											<li>Select Whatsapp</li>

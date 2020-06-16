@@ -14,8 +14,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+	<body>
+		<div class="cssload-loader">
+
+</div>
 
 			<!-- Header -->
 				  <header id="header">
@@ -48,8 +50,7 @@
 
 			<!-- Main -->
 				
-<iframe src="https://scratch.mit.edu/projects/404283133/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-			<!-- Footer -->
+
 				<footer id="footer">
 					
 					<ul class="copyright">
@@ -58,8 +59,19 @@
 				</footer>
 
 		</div>
-
+</div>
 		<!-- Scripts -->
+<script>
+$(document).ready(function() {
+//Preloader
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.cssload-loader');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>

@@ -3509,6 +3509,7 @@ input, select, textarea {
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
+					color:#7ACABF;
 				}
 
 			#banner .content .image {
@@ -3638,9 +3639,26 @@ input, select, textarea {
 
 		/* Banner */
 
-			#banner .content {
-				padding: 4.5em;
+			#banner {
+				background-attachment: scroll;
 			}
+
+				#banner .goto-next {
+					height: 7em;
+				}
+
+				#banner .content {
+					padding: 9em 0;
+					text-align: center;
+				}
+
+		#banner .content h2{
+			padding-right: 15px;
+		}
+
+					#banner .content .image {
+						margin: 0;
+					}
 
 		/* Footer */
 
@@ -3726,11 +3744,7 @@ input, select, textarea {
 					text-align: center;
 				}
 
-					#banner .content header {
-						display: block;
-						margin: 0 0 2em 0;
-						text-align: center;
-					}
+					
 
 					#banner .content .image {
 						margin: 0;

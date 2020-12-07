@@ -25,6 +25,10 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+$red: #f3576c;
+$purple: #3e2e6a;
+$blue: #130b52;
+$bg: #fbe6d3;
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -124,6 +128,27 @@ input, select, textarea {
 .nav {
 	font-weight: 200;
 }
+.responsive {
+  width: 75%;
+  height: auto;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: indianred;
+   font-size:4vw;
+	color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+	padding-top: 20px;
+	font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+.page{
+	background: #FFFFFF;
+	position: relative;
+}
 .start {
   width: 100%;
   height: 100vh;
@@ -218,13 +243,13 @@ li span {
 
 
 .card {
-	color: #013243; /*SHERPA BLUE*/
+	color: lightcoral; /*SHERPA BLUE*/
 	position: relative;
 	margin-top: 400px;
 	left: 50%;
 	width: 300px;
 	height: 400px;
-	background: #e0e1dc;
+	background: white;
 	transform-style: preserve-3d;
 	transform: translate(-50%,-50%) perspective(2000px);
 	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
@@ -243,7 +268,7 @@ li span {
 	left: 0;
 	width: 100%;
 	height: 5px;
-	background: #BAC1BA;
+	background: white;
 	transform-origin: bottom;
 	transform: skewX(-45deg);
 }
@@ -255,7 +280,7 @@ li span {
 	right: -5px;
 	width: 5px;
 	height: 100%;
-	background: #92A29C;
+	background: white;
 	transform-origin: left;
 	transform: skewY(-45deg);
 }
@@ -270,10 +295,10 @@ li span {
 
 .card .bark {
 	position: absolute;
-	background: #e0e1dc;
+	background: white;
 	width: 100%;
 	height: 100%;
-	opacity: 0;
+	opacity:0;
 	transition: .7s;
 }
 
@@ -551,7 +576,34 @@ animation-name: fadeInOut;
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
-
+. {
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	
+	h1 {
+		color: $bg;
+		text-transform: uppercase;
+		width: 100%;
+		text-align: center;
+		text-shadow: -1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple;
+		
+		&:after {
+			content: attr(data-heading);
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;
+			overflow: hidden;
+			color: $red;
+			transform: translate(0.4vw, 0.3vh);
+			mix-blend-mode: darken;
+			text-align: center;
+			width: 100%;
+			text-shadow: 1px 0px 0px $purple, 0px 1px 0px $blue, 2px 1px 0px $purple, 1px 2px 0px $blue, 3px 2px 0px $purple, 2px 3px 0px $blue, 4px 3px 0px $purple, 3px 4px 0px $blue, 5px 4px 0px $purple, 4px 5px 0px $blue, 6px 5px 0px $purple, 5px 6px 0px $blue, 7px 6px 0px $purple;
+		}
+	}
+}
 
 	code {
 		background: rgba(255, 255, 255, 0.075);
@@ -4467,7 +4519,10 @@ animation-name: fadeInOut;
 		/* Footer */
 
 			#footer {
-				padding: 3em 1.25em;
+    padding-top: 1em;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+    padding-bottom: 3em;
 			}
 
 				#footer .copyright {

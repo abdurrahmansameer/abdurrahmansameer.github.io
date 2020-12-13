@@ -19,6 +19,204 @@ body{
   color: #c4c3ca;
 	font-family: 'Muli', sans-serif;
 }
+
+
+.wrapper{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+ .card{
+    max-width: 300px;
+     min-height: 250px;
+     background: #1F2833;
+     padding: 30px;
+     box-sizing: border-box;
+     color: #C5C6C7;
+     margin:20px;
+     box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+}
+ .card:nth-child(2){
+    background: #1F2833;
+}
+ .card:last-child{
+    background: #1F2833;
+}
+ .card-title{
+     margin-top: 0;
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 1.2px;
+}
+ .card-content{
+     font-size: 14px;
+     letter-spacing: 0.5px;
+     line-height: 1.5;
+}
+ .card-btn{
+     all: unset;
+     display: block;
+     margin-left: auto;
+     border: 2px solid #FFF;
+     padding: 10px 15px;
+     border-radius: 25px;
+     font-size: 10px;
+     font-weight: 600;
+     transition: all 0.5s;
+     cursor: pointer;
+     letter-spacing: 1.2px;
+	 
+}
+ .card-btn:hover{
+    color:#02b875;
+    background: #FFF;
+	 
+}
+ .card:nth-child(2) .card-btn:hover{
+    color:#4181ee;
+    background: #FFF;
+	 
+}
+ .card:last-child .card-btn:hover{
+    color:#673ab7;
+     background: #FFF;
+	 
+}
+
+.cardTitle {
+  text-decoration: none;
+}
+
+.title {
+  font-family: $open-sans;
+  font-weight: 300;
+}
+
+.row {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+// Base styles
+.card {
+  float: left;
+  padding: 0 1.7rem;
+  width: 80%;
+  .menu-content {
+    @include cf;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+    }
+    a {
+      color: $white;
+    }
+    span {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      font-size: 10px;
+      font-weight: 700;
+      font-family: 'Open Sans';
+      transform: translate(-50%, 0);
+    }
+  }
+}
+  .wrapper {
+    background-color: $white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+  }
+  .data {
+    float: right;
+    width: 60%;
+   height: 100%;
+}
+    .content {
+      padding: 1em;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .author {
+    font-size: 12px;
+  }
+  .title {
+    margin-top: 10px;
+  }
+  .text {
+    height: 70px;
+    margin: 0;
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  input[type='checkbox']:checked + .menu-content {
+    transform: translateY(-60px);
+  }
+}
+
+// First example styles
+.example-1 {}
+  .wrapper {
+
+   
+  }
+  .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $bermuda;
+    color: $white;
+    padding: 0.8em;
+    span {
+      display: block;
+      text-align: center;
+    }
+}
+    .day {
+      font-weight: 700;
+      font-size: 24px;
+      text-shadow: 2px 3px 2px rgba($black, 0.18);
+    }
+    .month {
+      text-transform: uppercase;
+    }
+    .month,
+    .year {
+      font-size: 12px;
+    }
+  }
+  .content {
+    background-color: $white;
+    box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+  }
+  .title {
+    a {
+      color: lighten($black, 50%);
+    }
+  }
+
+
+.image {
+  float: left;
+  width: 40%;
+}
+
+.book-image {
+  width: 100%;
+  display: block;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+View Compiled
+
+
+Resources
 ::selection {
 	background-color: #000;
   color: #fff;
@@ -124,7 +322,7 @@ label ul {
 label a {
   margin-bottom: 1em;
   display: block;
-  color: #000;
+  color: #1f2833;
   text-decoration: none;
 }
 
@@ -304,8 +502,7 @@ main {
   color: #45A29E;
 }
 .section-title-wrap h1{
-	margin: 0;
-	padding: 0;
+	
 	font-size: 5vw;
   letter-spacing: 8px;
 	font-weight: 900;
@@ -795,7 +992,106 @@ a {
   }
 }
 
+.cont {
+  max-width: 948px;
+  margin: 4em auto;
+  padding: 4em;
+  background: #fff;
+  border-radius: 1em;
+}
 
+section.cards {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(3, 256px);
+  grid-template-rows: repeat(12, 196px);
+  grid-gap: 16px;
+}
+
+
+
+// .horizontal-reverse img {
+//   border-top-right-radius: 0.5em;
+//   border-bottom-right-radius: 0.5em;
+// }
+
+// .vertical img {
+//   border-top-left-radius: 0.5em;
+//   border-top-right-radius: 0.5em;
+// }
+
+.horizontal .card__img, .reverse-horizontal .card__img {
+  height: 100%;
+}
+
+.vertical .card__img {
+  width: 100%;
+}
+.card__content {
+  padding: 16px;
+}
+
+.card__type {
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  color: palevioletred;
+  padding-bottom: 0.5em;
+}
+
+.card__title {
+  font-size: 18px;
+  opacity: 0.8;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  transition: all 0.25s ease;
+}
+
+.card__date {
+  font-size: 14px;
+  padding-bottom: 0.5em;
+  opacity: 0.3;
+}
+
+.card__time-to-read {
+  font-style: italic;  
+}
+
+.card__excerpt {
+  font-size: 16px;
+  padding-bottom: 0.5em;
+}
+
+.card__tags {
+  margin-top: auto;
+}
+
+.tag {
+  display: inline;
+  background: papayawhip;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-size: 12px;
+  color: palevioletred;
+  user-select: none;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: darken(papayawhip, 5%);
+}
+
+.tag:active {
+  background: darken(papayawhip, 10%);
+}
+
+.tag i {
+  margin-right: 4px;
+}
+View Compiled
+
+Resources
 
 
 
@@ -1082,3 +1378,53 @@ a {
     border-radius: 50%;
     box-shadow: 0 0 0 20px rgba(255,255,255,.1);
 }
+@media only screen and (max-width: 400px) {
+  .section-title-wrap h1{
+	font-size: 8vw;
+  }
+	.shadow-title{
+	
+	
+	font-size: 15vw;
+	
+}
+}
+.contain {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain p {
+  
+  color: #c5c6c7;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.contain p span.typed-text {
+  font-weight: bold;
+  color: #45a29e;
+}
+.contain p span.cursor {
+  display: inline-block;
+  background-color: #45a29e;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.contain p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+
+Resources

@@ -11,163 +11,17 @@
 </head>
 <body>
 	
-<label>
-  <input type='checkbox'>
-<span class='menu'>
-    <span class='hamburger'></span>
-</span>
-	
-<ul style="font-weight: 800; align-content: center">
-    
-      <a href='#'>BLOGS</a>
-    
-    
-      <a href='#'>PROJECTS</a>
-    
-    
-      <a href='#'>PHOTOGRAPHY</a>
-    
-  </ul>
-</label>
-	
-
-<div class="shadow-title parallax-top-shadow">Portfolio</div>
-  
-<div class="section full-height">
-  <div class="section-title-wrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 parallax-fade-top" style="text-align: center">
-			
-          <p>Hello! I'm</p>	
-          <h1>Abdurrahman<br>Sameer</h1>
-			 <div class="contain">
-    <p>I love <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-  </div>
-			<script>
-			const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
-
-const textArray = ["Programming", "Electronics", "Photography", "LEARNING"];
-const typingDelay = 200;
-const erasingDelay = 100;
-const newTextDelay = 1000; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
-
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    setTimeout(erase, newTextDelay);
-  }
-}
-
-function erase() {
-  if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
-});
-			</script>
+  <div class="container">
+    <div class="wrapper">
+      <div class="content">
+        <div class="item">
+          <!-- Place your content here to have it be centered vertically and horizontally  -->
+          <h1>COMING SOON</h1>
+          <p>This website is under construction.</p>
         </div>
-      </div>	
+      </div>
     </div>
   </div>
-</div>
-<main>
-	
-<div class="Card">
-	
-		<div class="Card-image"></div>
-	
-		<div class="Card-body">
-			
-				<h1 class="Card-title">About Me</h1>
-				<p class="Card-description">
-					Lorem ipsum, dolor sit amet consectetur
-					adipisicing elit. Exercitationem aliquid
-					magnam ipsum nisi maxime porro voluptates
-					numquam, modi ea fugit sapiente architecto
-					unde laboriosam illum autem quos? Officia,
-					ad vitae?
-				</p>
-			
-		</div>
-
-	</div>
-	</main
-	>
-	      <h2 style="text-align: center; font-family: 'Muli', sans-serif; color: #45A29E; background-color: #1f2029"><strong>MY WORK</strong></h2>
-<div class="wrapper">
-<div class="card">
-  <h3 class="card-title">BLOGS</h3>
-    <p class="card-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-    <button class="card-btn">VEIW</button>
-  </div>
-  <div class="card">
-    <h3 class="card-title">PROJECTS</h3>
-    <p class="card-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-    <button class="card-btn">VEIW</button>
-  </div>
-  <div class="card">
-    <h3 class="card-title">PHOTOGRAPHY</h3>
-    <p class="card-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-	  <button class="card-btn"><a href="#">VEIW</a></button>
-  </div>
-</div>
-
-	
-	</main>
-<div class="box">
-<div class="w3-container">
-  <h2 style="text-align: center; font-family: 'Muli', sans-serif; color: #45A29E; background-color: #1f2029"><strong>TOP PROJECTS</strong></h2>
-</div>
-
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides w3-animate-right" src="image/01.jpg" style="width:100%">
-  <img class="mySlides w3-animate-right" src="image/02.jpg" style="width:100%">
-  <img class="mySlides w3-animate-right" src="image/03.jpg" style="width:100%">
-  <img class="mySlides w3-animate-right" src="image/04.jpg" style="width:100%">
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2500);    
-}
-</script>
-	</div>
-
-
-
 
 
 

@@ -1,30 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Abdurrahman Sameer</title>
-<meta charset="UTF-8">
-
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/7b742569a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7b742569a6.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Abdurrahman Sameer</title>
 </head>
 <body>
-	
-  <div class="container">
-    <div class="wrapper">
-      <div class="content">
-        <div class="item">
-          <!-- Place your content here to have it be centered vertically and horizontally  -->
-          <h1>COMING SOON</h1>
-          <p>This website is under construction.</p>
-        </div>
+  <div class="transition transition-2 is-active"></div>
+  <div id="content" class="animate">
+      <div class="section01">
+          <div class="navigation">
+              <input type="checkbox" id="active">
+              <label for="active" class="menu-btn"><span></span></label>
+              <label for="active" class="close"></label>
+              <div class="wrapper">
+                  <ul>
+                      <li><a href="#" class="active">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">Feedback</a></li>
+                  </ul>
+              </div>  
+          
+              <img src="b3.png" alt="logo" class="logo">
+          </div>
+          <div class="hero">
+              <h6><b>HI, I AM</b></h6>
+              <h1><b>ABDURRAHMAN</b></h1>
+              <h2><b>SAMEER</b></h2>
+          </div>
+          <div class="line"></div>
+          <div class="icons">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-behance"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-youtube"></i>
+          </div>
       </div>
-    </div>
+      <div class="section02">
+          <div class="work">
+              <h3>PROJECTS</h3>
+              <p>A selection of some of my recent work.</p>
+          </div>
+          <div class="container">
+              <div class="product">
+                <div class="product-card">
+                  <h2 class="name">Porsche 911</h2>
+                  <span class="price">3D RENDER</span>
+                  <a href="p1.html" class="popup-btn" id="link-o">VEIW PROJECT</a>
+                  <img src="3.jpg" class="product-img" alt="">
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-card">
+                  <h2 class="name">ORIENT</h2>
+                  <span class="price">WEB APP</span>
+                  <a href="orient.html" class="popup-btn" id="link-o">VEIW PROJECT</a>
+                  <img src="1.jpeg" class="product-img" alt="" style="filter: brightness(70%);">
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-card">
+                  <h2 class="name">Audi R8</h2>
+                  <span class="price">3D RENDER</span>
+                  <a class="popup-btn">VEIW PROJECT</a>
+                  <img src="4.jpg" class="product-img" alt="">
+                </div>
+              </div>
+            </div>
+          <a class="all-btn">SEE ALL PROJECTS</a>
+      </div>
+      <div class="section03">
+          <div class="love">
+              <h3>PASSION</h3>
+              <p>Some of the things that I really enjoy.</p>
+          </div>
+          <div class="activity-container">
+              <div class="activity">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>PROGRAMMING</h3>
+                  <p>blah blah blah. bla blaaaa. balah blah blahhhhhhhh . bleet, bteet, bleeeet.</p>
+                  <p>C+ | Javascript | Python</p>
+              </div>
+              <div class="activity">
+                  <i class="fa-solid fa-robot"></i>
+                  <h3>ROBOTICS</h3>
+                  <p>blah blah blah. bla blaaaa. balah blah blahhhhhhhh . bleet, bteet, bleeeet.</p>
+                  <p>Arduino | Raspberry Pi</p>
+              </div>
+              <div class="activity">
+                  <i class="fa-solid fa-cube"></i>
+                  <h3>CGI</h3>
+                  <p>blah blah blah. bla blaaaa. balah blah blahhhhhhhh . bleet, bteet, bleeeet.</p>
+                  <p>Blender | Gimp</p>
+              </div>
+              <div class="activity">
+                  <i class="fa-solid fa-camera"></i>
+                  <h3>PHOTOGRAPHY</h3>
+                  <p>blah blah blah. bla blaaaa. balah blah blahhhhhhhh . bleet, bteet, bleeeet.</p>
+                  <p>GoPro | Nikon</p>
+              </div>
+          </div>
+      </div>
+      <footer>
+          <div class="footer-content">
+            <img src="b4.png" alt="">
+            <ul class="socials">
+              <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#"> <i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>Copyright &copy <span id="year"></span> <a href="#">Abdurrahman Sameer</a> </p>
+          </div>
+        </footer>
   </div>
-
-
-
-
+    <script src="index.js"></script>
 </body>
 </html>

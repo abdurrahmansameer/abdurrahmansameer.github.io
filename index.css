@@ -60,7 +60,7 @@ body {
 }
 .section02{
   position: relative;
-  height:88%;
+  height:80%;
   padding-top: 35px;
 }
 .section03{
@@ -259,6 +259,7 @@ input[type="checkbox"]{
   transition: all 0.5s;
   cursor: pointer;
   letter-spacing: .5px;
+  font-weight: 600;
 }
 
 .button span {
@@ -308,6 +309,7 @@ input[type="checkbox"]{
   top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: fit-content;
 }
 .icons i{
   font-size: 17px;
@@ -338,7 +340,7 @@ input[type="checkbox"]{
 .row h3{
   margin: 0px;
   font-size: 30px;
-  background: linear-gradient(145deg,  #cccccc 0%, #222222 15%, #222222 100%);
+  background: linear-gradient(145deg,  #cccccc 0%, #222222 7%, #222222 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -361,7 +363,8 @@ input[type="checkbox"]{
   transition: all 0.5s;
   cursor: pointer;
   letter-spacing: .5px;
-  padding-top: 7px;
+  padding-top: 17px;
+  font-weight: 600;
 }
 
 .more-button span {
@@ -451,12 +454,24 @@ input[type="checkbox"]{
     flex-direction: column;
     padding-top: 45px;
   }
+  .row h3{
+    background: linear-gradient(145deg,  #cccccc 0%, #222222 15%, #222222 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .col{
     flex-basis: 0%;
     padding-bottom: 0px;
   }
   .header{
     text-align: center;
+  }
+  .more-button span:after {
+    opacity: 1;
+  }
+  .button span:after {
+    opacity: 1;
   }
 }
 .love{
@@ -526,12 +541,14 @@ input[type="checkbox"]{
   .button{
     font-size: 12px;
   }
+  .icons i{
+    font-size: 12px;
+    margin-right: 10px;
+  }
   .card{
     width: 170px;
     height: 200px;
-    margin: 10px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0px;
   }
   .grid{
     width:360px;
@@ -539,7 +556,7 @@ input[type="checkbox"]{
     display:grid;
     grid-template-columns: 170px 170px;
     grid-column-gap: 10px;
-    grid-row-gap: 0px;
+    grid-row-gap: 10px;
   }
   .col h3{
     font-size: 25px;
@@ -556,6 +573,12 @@ input[type="checkbox"]{
   .love p{
     font-size: 12px;
   }
+  .activity{
+    margin-bottom: 0px;
+  }
+  .activity-container{
+    margin-bottom: 70px;
+  }
 }
 @media screen and (max-width: 500px) {
   .logo{
@@ -570,9 +593,12 @@ input[type="checkbox"]{
   .line{
     left: 45px;
   }
+  .icons{
+    width: 300px;
+  }
   .icons i{
     margin-right: 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .hero h1{
     font-size: 25px;
@@ -699,6 +725,13 @@ footer {
 @media (max-width: 500px) {
   .footer-bottom p {
     float: none;
+    font-size: 12px;
+  }
+  .socials li{
+    margin: 0 5px;
+  }
+  .socials a i{
+    font-size: 12px;
   }
 }
 

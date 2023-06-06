@@ -244,6 +244,23 @@ input[type="checkbox"]{
   letter-spacing: .5px;
   line-height: 23px;
 }
+.underlined {
+  /*   background: red; */
+    position: relative;
+  }
+.underline-clip:after {
+  content: '';
+  position: absolute;
+  top: 95%;
+  width: 150%;
+  aspect-ratio: 3 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 3px solid var(--xgray);
+  /* Use a clip-path to hide and show the bits you want */
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
 .button {
   background-color: transparent;
   border: none;

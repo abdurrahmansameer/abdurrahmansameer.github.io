@@ -21,14 +21,15 @@
     <div class="wrapper">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#" class="active">Projects</a></li>
-            <li><a href="#">Blogs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
         </ul>
     </div>  
-    <a href="index.html"><img src="b4.png" alt="logo" class="logo" id="link-o"></a>
-  </div> 
+
+    <div class="logo"><h2>AS</h2></div>
+  </div>
   <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('3.jpg');">
     <div class="hero-text">
       <h1><strong>Porsche 911</strong></h1>
@@ -53,7 +54,7 @@
         <p style="margin-top: 5px;">02 weeks</p>
       </div>
       </div>
-      <h4><a class="veiw-btn">VEIW ON BEHANCE</a></h4>
+      <button class="more-button" onclick="window.location.href='https://www.behance.net/gallery/151369993/Porsche-911-Blender-CGI'"><span>Veiw on Behance </span></button>
   </div>
   <div class="fadeMe" id="overlay"></div>
     <div id="gallery">
@@ -115,20 +116,19 @@
       }
     }
     </script>
-          <footer>
-            <div class="footer-content">
-              <img src="b4.png" alt="">
-              <ul class="socials">
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"> <i class="fa-brands fa-youtube"></i></a></li>
-              </ul>
-            </div>
-            <div class="footer-bottom">
-              <p>Copyright &copy <span id="year"></span> <a href="#">Abdurrahman Sameer</a> </p>
-            </div>
-          </footer>
+    <footer>
+      <div class="footer-content">
+        <ul class="socials">
+          <i class="fa-brands fa-github" onclick="window.location.href='https://github.com/abdurrahmansameer'"></i>
+          <i class="fa-brands fa-behance" onclick="window.location.href='https://www.behance.net/abdurrahmansameer'"></i>
+          <i class="fa-brands fa-linkedin-in" onclick="window.location.href='https://www.linkedin.com/in/abdurrahmansameer/'"></i>
+          <i class="fa-brands fa-youtube" onclick="window.location.href='https://www.youtube.com/channel/UC50VUz-bNX5JYNMYfb836Tg'"></i>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy <span id="year"></span> Abdurrahman Sameer</p>
+      </div>
+    </footer>
   <script src="index.js"></script>
 
 </body>

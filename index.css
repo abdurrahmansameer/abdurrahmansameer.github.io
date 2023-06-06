@@ -446,7 +446,44 @@ input[type="checkbox"]{
   font-size: 10px;
   color: var(--xwhite);
 }
-
+.p-col{
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 45%;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.card-p{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 10px;
+  background-color: var(--xgray);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+.card-p:hover{
+  transform: translateY(-10px);
+}
+.card-p h5{
+  font-size: 20px;
+  color: var(--xwhite);
+  text-shadow: 0 0 5px #999999;
+  margin-bottom: 0px;
+}
+.card-p p{
+  text-shadow: 0 0 15px #000;
+  font-size: 10px;
+  color: var(--xwhite);
+}
 /*Responsive styles*/
 
 @media (max-width: 1245px) {
@@ -685,19 +722,16 @@ footer {
   margin: 0 10px;
 }
 
-.socials a {
+.socials i {
   text-decoration: none;
   color: #fff;
-  padding: 5px;
-}
-
-.socials a i {
+  padding: 10px;
   font-size: 1.1rem;
   width: 20px;
   transition: transform .2s;
 }
 
-.socials a:hover i {
+.socials i:hover{
   transform: scale(1.5);
 }
 

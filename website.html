@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/7b742569a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7b742569a6.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="p.css">
+    <link rel="stylesheet" href="transition.css">
+    <title>Portfolio Website</title>
+    
+</head>
+<body>
+  <div class="transition transition-2 is-active"></div>
+  <div class="navigation">
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Photography</a></li>
+        </ul>
+    </div>  
+
+    <div class="logo"><h2>AS</h2></div>
+  </div>
+  <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('w1.png');">
+    <div class="hero-text">
+      <h1><strong>Portfolio</strong></h1>
+      <p>WEBSITE</p>
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="about">
+    <h1><strong>ABOUT THIS PROJECT.</strong></h1>
+    <div class="details-container">
+      <div class="details">
+        <p style="margin-top: 0px;">This is my portfolio website that I designed and built from scratch using basic HTML, CSS and Javascript. This website is hosted on Github<br><br></p>
+      </div>
+      <div class="details">
+        <h6>Application Used</h6>
+        <p style="margin-top: 5px;">VS Code</p>
+        <br>
+        <h6>Date</h6>
+        <p style="margin-top: 5px;">June 01th 2023</p>
+        <br>
+        <h6>Time Spent</h6>
+        <p style="margin-top: 5px;">01 Year</p>
+        <br>
+        <h6>Languages Used</h6>
+        <p style="margin-top: 5px;">HTML, CSS, Javascript</p>
+      </div>
+      </div>
+      <button class="more-button" onclick="window.location.href='https://github.com/abdurrahmansameer/abdurrahmansameer.github.io'"><span>Veiw on Github</span></button>
+  </div>
+  <div class="fadeMe" id="overlay"></div>
+
+    <script>
+    let darkBoxVisible = false;
+
+    window.addEventListener('load', (event) => {
+      let images = document.querySelectorAll("img");
+      if(images !== null && images !== undefined && images.length > 0) {
+        images.forEach(function(img) {
+          img.addEventListener('click', (evt) => {
+            showDarkbox(img.src);
+          });
+        });
+      }
+    });
+
+    function showDarkbox(url) {
+      if(!darkBoxVisible) {
+        let x = (window.innerWidth - 1280) / 2;
+        let y = window.scrollY + 50;
+
+        // Create the darkBox
+        var div = document.createElement("div");
+        var body = document.body
+        var overlay = document.getElementById("overlay")
+        div.id = "darkbox";
+        div.innerHTML = '<img class="darkboximg" src="'+url+'" />';
+        document.body.appendChild(div);
+        let box = document.getElementById("darkbox");
+        body.style.overflowY = 'hidden'
+        box.style.height = 'auto';
+        overlay.style.display = 'block'
+        box.addEventListener('click', (event) => {
+          // Remove it
+          let element = document.getElementById("darkbox");
+          element.parentNode.removeChild(element);
+          body.style.overflowY = 'scroll'
+          darkBoxVisible = false;
+          overlay.style.display = 'none'
+        })
+
+        darkBoxVisible = true;
+
+      } else {
+        // Remove it
+        let element = document.getElementById("darkbox");
+        element.parentNode.removeChild(element);
+
+        darkBoxVisible = false;
+      }
+    }
+    </script>
+    <footer>
+      <div class="footer-content">
+        <ul class="socials">
+          <i class="fa-brands fa-github" onclick="window.location.href='https://github.com/abdurrahmansameer'"></i>
+          <i class="fa-brands fa-behance" onclick="window.location.href='https://www.behance.net/abdurrahmansameer'"></i>
+          <i class="fa-brands fa-linkedin-in" onclick="window.location.href='https://www.linkedin.com/in/abdurrahmansameer/'"></i>
+          <i class="fa-brands fa-youtube" onclick="window.location.href='https://www.youtube.com/channel/UC50VUz-bNX5JYNMYfb836Tg'"></i>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy <span id="year"></span> Abdurrahman Sameer</p>
+      </div>
+    </footer>
+  <script src="index.js"></script>
+
+</body>
+</html>

@@ -441,13 +441,13 @@ input[type="checkbox"]{
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(1.jpeg);
 }
 .card2{
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(2.png);
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(ms1.jpeg);
 }
 .card3{
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(w1.png);
 }
 .card4{
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(l3.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(bmw03.png);
 }
 .card:hover{
   transform: translateY(-10px);
